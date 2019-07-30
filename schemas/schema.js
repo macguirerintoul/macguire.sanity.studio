@@ -9,6 +9,7 @@ import post from './post'
 import project from './project'
 import videoEmbed from './videoEmbed'
 import showcase from './showcase'
+import index from './index'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,5 +17,5 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([pick, post, project, videoEmbed, showcase]),
+  types: schemaTypes.concat([pick, post, project, videoEmbed, showcase, index]),
 })

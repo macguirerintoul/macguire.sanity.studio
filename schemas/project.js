@@ -8,9 +8,21 @@ export default {
       name: 'title',
       type: 'string',
     },
-    { title: 'Description', name: 'description', type: 'text' },
+    { title: 'Short Description', name: 'shortDescription', type: 'string' },
+    { title: 'Long Description', name: 'longDescription', type: 'text' },
     { title: 'Order', name: 'order', type: 'number' },
-    { title: 'Image', name: 'image', type: 'image' },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'image',
+      fields: [
+        {
+          title: 'Alt Text',
+          name: 'alt',
+          type: 'string',
+        },
+      ],
+    },
     {
       title: 'Slug',
       name: 'slug',
@@ -24,11 +36,7 @@ export default {
             .slice(0, 200),
       },
     },
-    {
-      title: 'Context',
-      name: 'context',
-      type: 'string',
-    },
+    { title: 'For', name: 'for', type: 'string' },
     {
       title: 'Roles',
       name: 'roles',
