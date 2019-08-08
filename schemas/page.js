@@ -1,8 +1,9 @@
 export default {
-  title: 'Index',
-  name: 'index',
+  title: 'Page',
+  name: 'page',
   type: 'document',
   fields: [
+    { title: 'Title', name: 'title', type: 'string' },
     {
       title: 'Text',
       name: 'text',

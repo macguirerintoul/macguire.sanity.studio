@@ -12,16 +12,10 @@ export default {
     { title: 'Long Description', name: 'longDescription', type: 'text' },
     { title: 'Order', name: 'order', type: 'number' },
     {
-      title: 'Image',
-      name: 'image',
-      type: 'image',
-      fields: [
-        {
-          title: 'Alt Text',
-          name: 'alt',
-          type: 'string',
-        },
-      ],
+      title: 'Featured Image',
+      name: 'featuredImage',
+      type: 'string',
+      description: 'Cloudinary ID of the featured image',
     },
     {
       title: 'Slug',
@@ -55,7 +49,12 @@ export default {
       type: 'array',
       of: [
         { type: 'block' },
-        { type: 'image' },
+        {
+          type: 'cloudinaryImage',
+        },
+        {
+          type: 'blockquote',
+        },
         {
           type: 'videoEmbed',
         },

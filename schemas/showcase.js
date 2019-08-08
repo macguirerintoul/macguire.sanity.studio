@@ -21,9 +21,9 @@ export default {
       },
     },
     {
-      title: 'File',
-      name: 'content',
-      type: 'file',
+      title: 'Cloudinary ID',
+      name: 'cloudinaryID',
+      type: 'string',
     },
     {
       title: 'Orientation',
@@ -32,8 +32,8 @@ export default {
       options: {
         list: [
           { title: 'Vertical', value: 'vertical' },
-          { title: 'Media Left', value: 'mediaLeft' },
-          { title: 'Media Right', value: 'mediaRight' },
+          { title: 'Media Left', value: 'media-left' },
+          { title: 'Media Right', value: 'media-right' },
         ],
         layout: 'radio',
       },

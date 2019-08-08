@@ -5,11 +5,13 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 import pick from './pick'
-import post from './post'
+import article from './article'
 import project from './project'
 import videoEmbed from './videoEmbed'
 import showcase from './showcase'
-import index from './index'
+import cloudinaryImage from './cloudinaryImage'
+import blockquote from './blockquote'
+import page from './page'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,5 +19,14 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([pick, post, project, videoEmbed, showcase, index]),
+  types: schemaTypes.concat([
+    pick,
+    article,
+    project,
+    videoEmbed,
+    showcase,
+    cloudinaryImage,
+    blockquote,
+    page,
+  ]),
 })
