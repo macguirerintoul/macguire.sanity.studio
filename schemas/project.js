@@ -1,3 +1,5 @@
+const marks = require('../util/externalLinkMarks.js')
+
 export default {
   title: 'Project',
   name: 'project',
@@ -15,10 +17,10 @@ export default {
     },
     { title: 'Short Description', name: 'shortDescription', type: 'string' },
     {
-      title: 'Overview',
-      name: 'overview',
+      title: 'Summary',
+      name: 'summary',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{ type: 'block', marks: marks }],
     },
 
     {
@@ -72,7 +74,7 @@ export default {
       name: 'content',
       type: 'array',
       of: [
-        { type: 'block' },
+        { type: 'block', marks: marks },
         {
           type: 'cloudinaryImage',
         },
