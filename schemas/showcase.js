@@ -4,9 +4,20 @@ export default {
   type: 'object',
   fields: [
     {
+      title: 'Content',
+      name: 'content',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+    {
       title: 'Caption',
       name: 'caption',
-      type: 'text',
+      type: 'string',
+    },
+    {
+      title: 'Alt text',
+      name: 'alt',
+      type: 'string',
     },
     {
       title: 'Type',

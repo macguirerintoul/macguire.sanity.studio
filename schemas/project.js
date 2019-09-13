@@ -8,8 +8,32 @@ export default {
       name: 'title',
       type: 'string',
     },
+    {
+      title: 'Featured',
+      name: 'featured',
+      type: 'boolean',
+    },
     { title: 'Short Description', name: 'shortDescription', type: 'string' },
-    { title: 'Long Description', name: 'longDescription', type: 'text' },
+    {
+      title: 'Overview',
+      name: 'overview',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+
+    {
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+        list: [
+          { title: 'Product Design', value: 'Product Design' },
+          { title: 'Web Development', value: 'Web Development' },
+        ],
+      },
+    },
     { title: 'Order', name: 'order', type: 'number' },
     {
       title: 'Featured Image',
